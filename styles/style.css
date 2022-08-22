@@ -1,0 +1,8 @@
+body {
+  display: flex;
+}
+
+header {
+  background-color: beige;
+  /* display: flex; */
+}
