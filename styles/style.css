@@ -1,8 +1,58 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  display: flex;
+  /* display: flex; */
 }
 
-header {
-  background-color: beige;
-  /* display: flex; */
+nav {
+  display: flex;
+  background-color: deepskyblue;
+}
+.navbar {
+  display: flex;
+}
+.navbar h1 {
+  flex-grow: 1;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+#about-me {
+  display: flex;
+  border-style: solid;
+}
+#about-me img {
+  width: 30%;
+  height: auto;
+}
+/* Shows background color change on succesful media query breakpoints DOUBLE CHECK TABLET SIZE*/
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    flex-direction: column;
+    background-color: rgb(230, 124, 124);
+  }
+  section {
+    padding-right: 0;
+  }
+  h1::after {
+    /* content: "TABLET"; */
+  }
+}
+/* Shows background color change on succesful media query breakpoints (IPHONE 12 PRO)*/
+@media screen and (max-width: 390px) {
+  header,
+  main {
+    flex-direction: column;
+
+    background-color: rgb(124, 170, 230);
+  }
+  section {
+    padding-right: 0;
+  }
+  h1::after {
+    /* content: "PHONE"; */
+  }
 }
